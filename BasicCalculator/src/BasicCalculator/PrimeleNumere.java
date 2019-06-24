@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package CalculatorVerificator;
+package BasicCalculator;
 
 /**
  *
@@ -16,7 +16,7 @@ import java.util.Scanner;
 
 public class PrimeleNumere {
 
-	public static void main(String [] args) {
+	public static void main(String args) {
 
 		// creare obiect nou din clasa scanner pentru a putea introduce informatii de la tastatura calculatorului
 		Scanner scanner = new Scanner(System.in);
@@ -53,4 +53,32 @@ public class PrimeleNumere {
 			 
 		}	
 	}
+        
+        // metoda ce afiseaza primele numerele pare
+        public void numP(int numPare) {
+            int num = 0; 
+            int highLimit = numPare*2;
+            //identificarea si afisarea numerelor pare
+            while (++num < highLimit && ++num % 2 ==0) {
+                
+                System.out.println(" " + num);
+			
+            } 
+        } 
+        
+        // metoda ce afiseaza primele numerele impare
+        public void numImp(int numImpare){
+            int num = -1;
+            int highLimit = numImpare * 2;
+            //identificarea si afisarea numerelor impare
+            while (++num < highLimit && ++num % 2 !=0 ) {
+
+            System.out.println(" " + num);
+        
+            }
+        }
+        
+        
 }
+
+        

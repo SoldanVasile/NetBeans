@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package CalculatorVerificator;
+package BasicCalculator;
 
 /**
  *
@@ -17,7 +12,7 @@ import java.util.Scanner;
 
 public class Fibonacci {
 
-	public static void main(String [] args) {
+	public static void main(String args) {
 
 		// creare obiect nou din clasa scanner pentru a putea introduce informatii de la tastatura calculatorului
 		Scanner scanner = new Scanner(System.in);
@@ -47,4 +42,23 @@ public class Fibonacci {
 			
 		}
 	}
+        
+        public void fibo(int numFib){
+                int num1 = 0, num2 = 1, num3;
+	 	num3 = num2 + num1;
+	 		 	
+	 	//identificarea si afisarea numerelor Fibonacci 
+		for (int i = 0; i < numFib; i++) {
+			
+			int num = num1 + num2;
+			
+			num1 = num2;
+			
+			num2 = num3;
+			
+			num3 = num2 + num1;
+			
+			System.out.println("  " + num);
+                }
+        }
 }

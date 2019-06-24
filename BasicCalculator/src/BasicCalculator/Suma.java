@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package CalculatorVerificator;
+package BasicCalculator;
 
 /**
  *
@@ -15,9 +15,9 @@ import java.util.Scanner;
 
 public class Suma {
 
-	public static void main(String [] args) {
-
-	// creare obiect nou din clasa scanner pentru a putea introduce informatii de la tastatura calculatorului
+	public static void main(String args) {
+            
+       	// creare obiect nou din clasa scanner pentru a putea introduce informatii de la tastatura calculatorului
 		Scanner scanner = new Scanner(System.in);
 
 	//introducere unui mesaj de salut, cu solicitarea de a introduce primul numar 
@@ -74,4 +74,16 @@ public class Suma {
 		System.out.println("Suma numerelor de tip float " + numfx + " si " + numfy + " este " + sumafxy);
 
 	}
+        
+        public double sumaDouble(double xd, double yd){ 
+            return xd + yd;          
+        }
+        
+        public int sumaInt(int x, int y){ 
+            return x + y;          
+        }
+
 }
+
+
+

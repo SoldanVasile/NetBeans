@@ -1,4 +1,4 @@
-package CalculatorVerificator;
+package BasicCalculator;
 /**
  *
  * @author User
@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class AriaPerim {
 
-	public static void main(String [] args) {
+	public static void main(String args) {
 
 	// creare obiect nou din clasa scanner pentru a putea introduce informatii de la tastatura calculatorului
 		Scanner scanner = new Scanner(System.in);
@@ -58,4 +58,12 @@ public class AriaPerim {
 		System.out.println("Perimetrul dreptunghiului cu laturile " + latx + " si " + laty + " este " + perimxy);
 
 	}
+        
+        public double aria(double latx, double laty){
+        return latx * laty;
+        }
+        
+        public double perim(double latx, double laty){
+            return (latx + laty) * 2; 
+        }
 }
